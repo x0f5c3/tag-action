@@ -1,0 +1,11 @@
+name: "PTerm Release"
+description: "Creates a new release if the PTerm version has changed in a commit."
+author: "MarvinJWendt"
+branding:
+  icon: award
+  color: orange
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.myInput }}
