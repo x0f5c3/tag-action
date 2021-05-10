@@ -1,5 +1,5 @@
-name: "PTerm Release"
-description: "Creates a new release if the PTerm version has changed in a commit."
+name: "PTerm Automatic Releases"
+description: "Creates a new git tag when the version in cmd/root.go changed."
 author: "MarvinJWendt"
 branding:
   icon: award
