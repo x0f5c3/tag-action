@@ -33,7 +33,7 @@ git update-index --assume-unchanged .github/workflows/*
 git fetch --tags
 
 echo "## Detecting current version"
-OLD_VERSION=$(git describe --tags $(git rev-list --tags --max-count=1))
+OLD_VERSION=$(git describe --tags $(git rev-list --tags --max-count=1))  || exit 0
 echo "## $OLD_VERSION"
 
 NEW_VERSION=$(cat cmd/root.go | grep "<---VERSION--->" | grep -oP "v\d*\.\d*\.\d*")
