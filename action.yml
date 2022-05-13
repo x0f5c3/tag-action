@@ -1,6 +1,6 @@
-name: "PTerm Automatic Releases"
-description: "Creates a new git tag when the version in cmd/root.go changed."
-author: "MarvinJWendt"
+name: "X0F5C3 Automatic Releases"
+description: "Creates a new git tag when the version field in the root cobra.Command is changed."
+author: "x0f5c3"
 branding:
   icon: award
   color: orange
